@@ -15,7 +15,7 @@ Since my Macbook already has git installed in Terminal, I don't need to install 
 In Terminal, I ran **ssh cs15lwi23aqw@ieng6.ucsd.edu**, then typed in the password I set up for this account. 
 
 After a few seconds, the Terminal should look something like this:
-![Image](https://github.com/ericwang184/cse15l-lab-reports/blob/main/ACCESS.png)
+![Image](ACCESS.png)
 
 ---
 ## Step 3: Trying Some Commands
