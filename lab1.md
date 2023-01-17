@@ -4,7 +4,7 @@ This report will be on how to remote access, from installing VSCode to running s
 ---
 ## Step 1: Installing VSCode
 
-After downloading VSCode, you should get a home page that looks similar to this:
+After downloading VSCode from the link ![Link](VScode.com), you should get a home page that looks similar to this:
 ![Image](VSCODE.png)
 However, if you have downloaded VSCode before and already have open projects, then the last project you were working on will open. 
 
