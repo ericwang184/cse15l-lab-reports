@@ -27,8 +27,8 @@ There's also inputs that don't induce a failure, such as the test written below.
     }
 ```
 From the screenshot below, if we run the test for the failure-inducing input that I wrote above, there is an memory error. However, the merge method should return the two lists together in one array in sorted order. 
-
+![image](failure.png)
 From the screenshot below, if we run the test for the input that doesn't induce a failure, we see that it passes the test. 
-    
+![image](nonfailure.png)
 ## Part 3
 
