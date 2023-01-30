@@ -1,9 +1,11 @@
 # Lab 2 Report
 ## Part 1
-For my StringServer class, I also used the Server class provided to us in the week 2 lab. The first screenshot is the StringServer class. 
+For my StringServer class, I also implemented methods in the Server class provided to us in the week 2 lab. The first screenshot is the StringServer class. 
 ![image](StringServer.png)
-The screenshot below is the Server class. 
+The screenshot below is the Server class provided to us. 
 ![image](Server.png)
+The next two screenshots are when I ran a web server with the specific paths and queries given to us in the lab report. 
+
 
 ## Part 2
 For the listExamples class, there was a bug in the merge method. One failure-inducing input is written below as a test.
