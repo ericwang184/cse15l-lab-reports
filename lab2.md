@@ -8,6 +8,7 @@ The next two screenshots are when I ran a web server with the specific paths and
 ![image](hello.png)
 ![image](howareyou.png)
 First, the main method is called to make a web server with the port number. The port number is passed in as an argument when compiling and running StringServer in the integrated Terminal in VSCode. Then, the handleRequest method will take the URL as an argument and then output the string after "=" in the query. 
+
 In the handleRequest method, the parameters array will update everytime a new URL is entered. The array strArray will be updated in the method from the first for loop. The array newStrArray will be changed so that it will hold the new string after "=" in the query. The string returnStr will be updated in the second for loop and will hold the strArray values as a string. Also, returnStr will be returned. 
 ## Part 2
 For the listExamples class, there was a bug in the merge method. One failure-inducing input is written below as a test.
