@@ -21,7 +21,7 @@ After a few seconds, the Terminal should look something like this:
 ## Step 3: Trying Some Commands
 1. ls -lat will show hidden files in the long versionthat I usually can't see, as well as the last time I edited those files.![Image](LAT.png)
 2. ls -a will show the hidden files, but only the names. ![Image](LSA.png)
-3. cp will copy the file. cat will concatonate a file. ![Image](CAT.png) Notice the last couple of lines in my terminal when I listed out all the files files.
+3. cp will copy the file. cat will concatonate a file. ![Image](CAT.png) Notice the last couple of lines in my terminal when I listed out all the files and hello.txt was one of the files listed.
 ``` 
 ls
 hello.txt
