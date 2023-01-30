@@ -21,4 +21,7 @@ After a few seconds, the Terminal should look something like this:
 ## Step 3: Trying Some Commands
 1. ls -lat will show hidden files in the long versionthat I usually can't see, as well as the last time I edited those files.![Image](LAT.png)
 2. ls -a will show the hidden files, but only the names. ![Image](LSA.png)
-3. cp will copy the file. cat will concatonate a file. ![Image](CAT.png) Notice how when I used ls, hello.txt will appear. That's because I copied the file with the command **cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/**
+3. cp will copy the file. cat will concatonate a file. ![Image](CAT.png) Notice how when I used ls, hello.txt will appear. That's because I copied the file with the command 
+```
+cp /home/linux/ieng6/cs15lwi23/public/hello.txt
+```
