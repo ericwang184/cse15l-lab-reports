@@ -1,7 +1,8 @@
 # Lab 2 Report
 ## Part 1
-For my StringServer class, I also used the Server class provided to us in the week 2 lab. The first screenshot is the StringServer class, and the second screenshot below is the Server class. 
+For my StringServer class, I also used the Server class provided to us in the week 2 lab. The first screenshot is the StringServer class. 
 ![image](StringServer.png)
+The screenshot below is the Server class. 
 ![image](Server.png)
 
 ## Part 2
