@@ -16,7 +16,7 @@ Since I have a Macbook, I can open up the Terminal application. However, if othe
 ```
 ssh cs15lwi23aqw@ieng6.ucsd.edu
 ```
-then typed in the password I set up for this account. Other students won't have the letters "aqw", but will have a different three letter combination. They will find their own specific three letter combination from the [link](https://sdacs.ucsd.edu/~icc/index.php) above which leads students to their CSE15l account.  
+then typed in the password I set up for this account. Other students won't have the letters "aqw", but will have a different three letter combination. They will find their own specific three letter combination from the same [link](https://sdacs.ucsd.edu/~icc/index.php) above which leads students to their CSE15l account.  
 
 After a few seconds, the Terminal should look something like this:
 ![Image](ACCESS.png)
