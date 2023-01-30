@@ -12,11 +12,11 @@ However, if you have downloaded VSCode before and already have open projects, th
 ## Step 2: Remote Connecting
 Since my Macbook already has git installed in Terminal, I don't need to install git again. 
 
-Since I have a Macbook, I can open up the Terminal application. However, if others have a Windows computer, they could use Terminal in their VSCode that they downloaded in step one by clicking on new terminal. To find my CSE15l account, I first went to the [site](https://sdacs.ucsd.edu/~icc/index.php). Then, I opened up the [google doc](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit?usp=sharing) to figure out how to reset my password on my CSE15l account. In Terminal, I ran 
+Since I have a Macbook, I can open up the Terminal application. However, if others have a Windows computer, they could use Terminal in their VSCode that they downloaded in step one by clicking on new terminal. To find my CSE15l account, I first went to this [site](https://sdacs.ucsd.edu/~icc/index.php). Then, I opened up the [google doc](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit?usp=sharing) to figure out how to reset my password on my CSE15l account. In Terminal, I ran 
 ```
 ssh cs15lwi23aqw@ieng6.ucsd.edu
 ```
-then typed in the password I set up for this account. Other students won't have the letters "aqw", but will have a different three letter combination. They will find their own specific three letter combination from the link above which leads students to their CSE15l account.  
+then typed in the password I set up for this account. Other students won't have the letters "aqw", but will have a different three letter combination. They will find their own specific three letter combination from the [link](https://sdacs.ucsd.edu/~icc/index.php) above which leads students to their CSE15l account.  
 
 After a few seconds, the Terminal should look something like this:
 ![Image](ACCESS.png)
