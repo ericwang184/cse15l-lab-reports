@@ -24,7 +24,7 @@ After a few seconds, the Terminal should look something like this:
 3. cp will copy the file. cat will concatonate a file. ![Image](CAT.png) Notice the last couple of lines in my terminal when I listed out all the files and hello.txt was one of the files listed.
 ``` 
 ls
-hello.txt per1
+hello.txt perl5 week1lab
 ```
 That's because I copied the file with the command 
 ```
