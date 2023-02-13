@@ -8,6 +8,7 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:The Spaniards never bothere
 ```
 For the example up top, grep -r will search recursively all the files under each directory recursively. So it will search every file in written_2, then in the written_2/travel_guides folder, then written_2/travel_guides/berlitz2 folder, then written_2/travel_guides/berlitz2/Bahamas-History folder, and then listing out the files that have "Lucayans". 
 
+
 This is the second example of the grep -r command.
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:436$ grep -r Israel
@@ -228,7 +229,7 @@ it then lists the file names with Israel in the file name, starting with
 findresults.txt:written_2/travel_guides/berlitz1/HandRIsrael.txt
 ```
 
-I found out how the grep -r command line option works at this [link](https://www.computerhope.com/unix/ugrep.htm)
+I found out how the grep -r command line option works at this [link](https://www.computerhope.com/unix/ugrep.htm).
 ## grep -n command line option
 This is the first example of the grep -n command option.
 ```
@@ -300,7 +301,8 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothe
 ```
 We see that grep -n command option doesn't work directories, and so the first six lines are outputed when it tries to search through a directory. Then, it lists out the two spots where "Lucayans" is present in a text file, and we see that they are in lines 6 and 7 in the Bahamas-History.txt file. 
 
-I found out how the grep -n command line option works at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+
+I found out how the grep -n command line option works at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/).
 ## grep -c command option
 This is the first example of the grep -c command.
 ```
@@ -499,6 +501,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
 ```
 We see that grep -c doesn't work on directories, but it works on files. It outputs how many times the key word/phrase ("Lucayans" in this case) is in a line within the file. We see that "Lucayans" doesn't come up in any other file but the Bahamas-History.txt file. 
 
+
 This is the second example of the grep -c command option. 
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:503$ grep -c "fact" written_2/travel_guides/berlitz2/*
@@ -583,7 +586,8 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:6
 ```
 This shows how many times "fact" was in a line within each of the .txt files in the written_2/travel_guides/berlitz/ directory. 
 
-I found out how to use the grep -c command option at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+
+I found out how to use the grep -c command option at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/).
 ## grep ^character filename command option
 This is the first example of how the grep ^character filename command works. 
 ```
@@ -613,7 +617,7 @@ returns all the lines from the files that match written_2/*/*/*/* that start wit
 ```
 grep ^T written_2/*/*/*/*
 ```
-The second example of how grep ^character filename works is below
+The second example of how grep ^character filename works is below.
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:518$ grep ^p written_2/*/*/*
 grep: written_2/non-fiction/OUP/Abernathy: Is a directory
@@ -625,5 +629,6 @@ grep: written_2/non-fiction/OUP/Rybczynski: Is a directory
 written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt:portimão and environs
 ```
 We see that the command option can't be used in directories, from the first six lines of output. Then, the last line of output shows that there's only one file that matches the file name syntax given in the command that has a line starting with the lowercase letter "p". 
+
 
 I found how to use the command at this [link](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
