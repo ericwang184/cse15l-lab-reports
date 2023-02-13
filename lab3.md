@@ -226,7 +226,7 @@ it then lists the file names with Israel in the file name, starting with
 ```
 findresults.txt:written_2/travel_guides/berlitz1/HandRIsrael.txt
 ```
-I found out how the grep -r command line option works at this [link]https://www.computerhope.com/unix/ugrep.htm
+I found out how the grep -r command line option works at this [link](https://www.computerhope.com/unix/ugrep.htm)
 ## grep -n command line option
 This is the first example of the grep -n command option
 ```
@@ -296,5 +296,5 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arri
 written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
 We see that grep -n command option doesn't work directories, and so the first six lines are outputed when it tries to search through a directory. Then, it lists out the two spots where "Lucayans" is present in a text file, and we see that they are in lines 6 and 7 in the Bahamas-History.txt file. 
-I found out how the grep -n command line option works at this [link]https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+I found out how the grep -n command line option works at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
