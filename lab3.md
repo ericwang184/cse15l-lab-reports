@@ -1,13 +1,14 @@
 # Lab 3
 ## grep -r command line option
-This is the first example of the grep -r command
+This is the first example of the grep -r command.
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:420$ grep -r "Lucayans" written_2
 written_2/travel_guides/berlitz2/Bahamas-History.txt:Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
 written_2/travel_guides/berlitz2/Bahamas-History.txt:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
 For the example up top, grep -r will search recursively all the files under each directory recursively. So it will search every file in written_2, then in the written_2/travel_guides folder, then written_2/travel_guides/berlitz2 folder, then written_2/travel_guides/berlitz2/Bahamas-History folder, and then listing out the files that have "Lucayans". 
-This is the second example of the grep -r command
+
+This is the second example of the grep -r command.
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:436$ grep -r Israel
 Binary file .git/index matches
@@ -226,9 +227,10 @@ it then lists the file names with Israel in the file name, starting with
 ```
 findresults.txt:written_2/travel_guides/berlitz1/HandRIsrael.txt
 ```
+
 I found out how the grep -r command line option works at this [link](https://www.computerhope.com/unix/ugrep.htm)
 ## grep -n command line option
-This is the first example of the grep -n command option
+This is the first example of the grep -n command option.
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:483$ grep -n "in fact" written_2/*/*/*/*
 written_2/non-fiction/OUP/Abernathy/ch14.txt:17:Note that the information and manufacturing practices examined here are not specific to the apparel industry—in fact, most were originally introduced in other sectors—but are applicable to a wide variety of consumer product industries. We focus on the retail-apparel channel because HCTAR’s surveys provide extensive evidence for the ways in which apparel suppliers are changing. Even if suppliers in other businesses will not make the specific operational changes of an apparel-maker, an increasing number are establishing information links with other channel players and combining information use with technologies and work practices to speed up order processing. For example, textile firms that supply retailers directly with their own products may have to combine equivalent information technologies with manufacturing innovations in finishing lines that shorten production cycles in order to gain competitive advantage. Much of what we have learned about the determinants of success for apparel suppliers can be applied to comparable situations faced by businesses in other retail-driven industries.
@@ -283,6 +285,7 @@ written_2/non-fiction/OUP/Kauffman/ch9.txt:155:But Figure . gives us an intuitiv
 written_2/non-fiction/OUP/Kauffman/ch9.txt:172:We as organisms have, in fact, constructed our ways of making a living such that those problem spaces are typically, but not always, solvable as coevolution proceeds. And, on average, the same thing holds for the econosphere. As old ways of making a living go extinct, new ones persistently enter. We too, it appears, have coconstructed our econosphere such that our ways of making a living, and discovering new ways of making a living, are manageable, probably in a self-organized critical manner, with small and large speciation and extinction events.
 ```
 In the example above, we see that the grep -n command option will search a specific phrase in a text file and return the line containing the phrase, as well as the line number in the text file the phrase was contained in. 
+
 This is the second example of the grep -n command.
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:486$ grep -n "Lucayans" written_2/*/*/*
@@ -296,6 +299,7 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arri
 written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
 We see that grep -n command option doesn't work directories, and so the first six lines are outputed when it tries to search through a directory. Then, it lists out the two spots where "Lucayans" is present in a text file, and we see that they are in lines 6 and 7 in the Bahamas-History.txt file. 
+
 I found out how the grep -n command line option works at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 ## grep -c command option
 This is the first example of the grep -c command.
@@ -494,6 +498,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:0
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
 ```
 We see that grep -c doesn't work on directories, but it works on files. It outputs how many times the key word/phrase ("Lucayans" in this case) is in a line within the file. We see that "Lucayans" doesn't come up in any other file but the Bahamas-History.txt file. 
+
 This is the second example of the grep -c command option. 
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:503$ grep -c "fact" written_2/travel_guides/berlitz2/*
@@ -577,3 +582,48 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:4
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:6
 ```
 This shows how many times "fact" was in a line within each of the .txt files in the written_2/travel_guides/berlitz/ directory. 
+
+I found out how to use the grep -c command option at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+## grep ^character filename command option
+This is the first example of how the grep ^character filename command works. 
+```
+[cs15lwi23aqw@ieng6-201]:skill-demo1-data:515$ grep ^t written_2/*/*/*/*
+written_2/non-fiction/OUP/Abernathy/ch6.txt:that is [Prob(D<Q*)](Co) = [Prob(D≥Q*)](Cu).
+written_2/non-fiction/OUP/Berk/CH4.txt:the role of make-believe play in children’s lives
+written_2/non-fiction/OUP/Berk/CH4.txt:the transformation of the child’s play world
+written_2/non-fiction/OUP/Berk/ch1.txt:the problem of child care.  In 1970, 30 percent of mothers with pre-school children were in the labor force, a ﬁgure that increased more than twofold, to 62 percent, by 2000.3 An obvious solution to reconciling parents’ employment needs with young children’s rearing needs is to make high-quality, nonparental care, with characteristics known to promote healthy psychological development, widely available and aordable. In Australia and Western Europe, child care is nationally regulated and liberally funded to ensure that it conforms to standards veriﬁed by research to foster children’s learning, social competence, and emotional security.4 
+written_2/non-fiction/OUP/Berk/ch1.txt:the “time bind.”  Like many parents, Angela, who raised the question of quality time, complains of being “torn in many directions.” Often she leaves work in a hurry in the late afternoon to pick up Victor and Jeannine from child care, dashes to Victor’s tumbling class or Jeannine’s piano lesson, then stops at the grocery store to pick up something for dinner. When Angela and her husband, Tom, walk through their front door, they typically head to the phone or fax machine to take care of unﬁnished work while trying to quell Victor and Jeannine’s hunger and irritability with a frozen dinner popped into the microwave and unlimited access to the TV set. Caught in a ceaseless sprint to reconcile job, marriage, and parenting, Angela and Tom feel drained at the end of the day—too tired to grant their children more than 10 or 15 minutes of focused time. When Victor and Jeannine do get their parents’ undivided attention, they are argumentative and unruly, compounding their parents’ fatigue and impatience. 
+written_2/non-fiction/OUP/Berk/ch1.txt:toward a balanced perspective.  The popular parenting literature is notable for lagging substantially behind advances in child-development theory and research. Today, sound theories and educational strategies exist that are neither adult- nor child-centered but, instead, portray both as participating actively, jointly, and inseparably in the process of development. 
+written_2/non-fiction/OUP/Berk/ch1.txt:temperament.  From the earliest ages, children vary greatly in preferences, interests, talents—and in temperament, or style of emotional responding, the most thoroughly studied of these sources of individual variation. Temperament encompasses activity level, ability to attend to stimuli, and capacity to adjust the intensity of emotions to a comfortable level so the child can remain adaptively engaged with his or her physical and social surroundings.64 
+written_2/non-fiction/OUP/Berk/ch2.txt:the zone of proximal development
+written_2/non-fiction/OUP/Berk/ch2.txt:the power of conversation.  The instructional mode of communication inherent in scaolding is well suited for tasks with clearly deﬁned goals. Conversations, in which adult and child reﬂect on everyday events, are more free-ranging. They can dwell on virtually any aspect of experience—of living and working together. This makes them an especially powerful tool for assisting children in building an internal mental life infused with a cultural worldview.
+written_2/non-fiction/OUP/Berk/ch2.txt:television viewing.  In Chapter 1, I noted that according to current survey ﬁndings, American adults spend over one-third of their free time—about 15 hours per week—watching TV. Estimates for children are even more ominous. Regular TV viewing typically begins between 2 and 3 years of age, consuming about 10.5 hours per week, or nearly 13 percent of the child’s waking hours. It rises steadily over early childhood until it reaches an average of 28 hours per week for school-age children, or about 30 percent of the child’s waking hours.106 When we consider how much the set is on during school holidays and summer vacations, children spend more time watching TV than they do in any other waking activity, including going to school and interacting with family members or peers. 
+written_2/non-fiction/OUP/Castro/chA.txt:the ladies answer, “Yes.” 
+written_2/non-fiction/OUP/Fletcher/ch1.txt:to Redemption
+written_2/non-fiction/OUP/Kauffman/ch9.txt:t is no accident that the words for economics and ecology have the same Greek root, “house.” Ecology and economics are, at root, the same. The economy of Homo habilis and Homo erectus, the stunning flaked flint tools of the Magdalinian culture of the magnificent Cro-Magnon in southern France , years ago when the large beasts had retreated southward from the glaciation, the invention and spread of writing in Mesopotamia, the Greek agora, and today’s global economy are all in the deepest sense merely the carrying on of the more diversified forms of trade that had their origins with the first autonomous agents and their communities over four billion years ago.
+written_2/non-fiction/OUP/Rybczynski/ch1.txt:the look of architecture
+written_2/non-fiction/OUP/Rybczynski/ch2.txt:two
+written_2/non-fiction/OUP/Rybczynski/ch3.txt:three
+```
+We see that in the example, 
+```
+grep ^t written_2/*/*/*/*
+```
+returns all the lines from the files that match written_2/*/*/*/* that start with the letter t. This command is case-sensitive, so if you want to find all the lines that start with uppercase t, then the command would be instead
+```
+grep ^T written_2/*/*/*/*
+```
+The second example of how grep ^character filename works is below
+```
+[cs15lwi23aqw@ieng6-201]:skill-demo1-data:518$ grep ^p written_2/*/*/*
+grep: written_2/non-fiction/OUP/Abernathy: Is a directory
+grep: written_2/non-fiction/OUP/Berk: Is a directory
+grep: written_2/non-fiction/OUP/Castro: Is a directory
+grep: written_2/non-fiction/OUP/Fletcher: Is a directory
+grep: written_2/non-fiction/OUP/Kauffman: Is a directory
+grep: written_2/non-fiction/OUP/Rybczynski: Is a directory
+written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt:portimão and environs
+```
+We see that the command option can't be used in directories, from the first six lines of output. Then, the last line of output shows that there's only one file that matches the file name syntax given in the command that has a line starting with the lowercase letter "p". 
+
+I found how to use the command at this [link](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
