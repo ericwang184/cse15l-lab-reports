@@ -1,5 +1,8 @@
 # Lab 3
 ## grep -r command line option
+
+The grep -r command will search recursively the specific phrase in the subdirectories and files contained in the directory it is searching in.
+
 This is the first example of the grep -r command.
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:420$ grep -r "Lucayans" written_2
@@ -228,9 +231,13 @@ it then lists the file names with Israel in the file name, starting with
 ```
 findresults.txt:written_2/travel_guides/berlitz1/HandRIsrael.txt
 ```
+This command would be useful when you want to remove a file that has a specific phrase in a directory with many text files. Grep -r would return the file with the specific phrase contained in it, and then rm -rf would be able to remove the file in the future. 
 
 I found out how the grep -r command line option works at this [link](https://www.computerhope.com/unix/ugrep.htm).
 ## grep -n command line option
+
+Grep -n not only finds the file that contains the specific phrase you are searching for in a directory, but it also returns the line that the specific phrase is in. 
+
 This is the first example of the grep -n command option.
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:483$ grep -n "in fact" written_2/*/*/*/*
@@ -299,11 +306,15 @@ grep: written_2/non-fiction/OUP/Rybczynski: Is a directory
 written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
 written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
-We see that grep -n command option doesn't work directories, and so the first six lines are outputed when it tries to search through a directory. Then, it lists out the two spots where "Lucayans" is present in a text file, and we see that they are in lines 6 and 7 in the Bahamas-History.txt file. 
+We see that grep -n command option doesn't work for directories, and so the first six lines are outputed when it tries to search through a directory. Then, it lists out the two spots where "Lucayans" is present in a text file, and we see that they are in lines 6 and 7 in the Bahamas-History.txt file. 
 
+The grep -n command would be useful if you are trying to edit the specific phrase in a directory with many text files, and grep -n command would return the line number with the file it's in, specifying it and making it easier to edit the text file using the sed command in the future since we know which line the specific phrase is. 
 
 I found out how the grep -n command line option works at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/).
 ## grep -c command option
+
+The grep -c command counts how many times the specific phrase comes up in each text file in the searched directory. 
+
 This is the first example of the grep -c command.
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:500$ grep -c "Lucayans" written_2/*/*/*    
@@ -586,9 +597,13 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:6
 ```
 This shows how many times "fact" was in a line within each of the .txt files in the written_2/travel_guides/berlitz/ directory. 
 
+The grep -c command is useful when you are searching for which file the specific phrase comes up in the most. For example, if you have multiple essays in text file format that are all over the word count in a directory, you can search with grep -c to find how many times the word "that" comes up so in order to delete some of them to go under the word count. 
 
 I found out how to use the grep -c command option at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/).
 ## grep ^character filename command option
+
+The grep ^charcter filename command option will return the lines that start with the character in the filename. This command is case-sensitive for the character, so it won't return the line if it starts with the uppercase of the character if the character is lowercase in the grep command, and vice versa. 
+
 This is the first example of how the grep ^character filename command works. 
 ```
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:515$ grep ^t written_2/*/*/*/*
@@ -630,5 +645,6 @@ written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt:portimão and environs
 ```
 We see that the command option can't be used in directories, from the first six lines of output. Then, the last line of output shows that there's only one file that matches the file name syntax given in the command that has a line starting with the lowercase letter "p". 
 
+This command is useful when you are searching for lines that start to similarly and you need to switch it up with different starting words. 
 
 I found how to use the command at this [link](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
