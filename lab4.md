@@ -42,6 +42,8 @@ Pressing the up arrow one time will get me to the ```nano ListExamples.java``` c
 
 # Step 9
 
+![Image](STEP9.png)
+
 Keys pressed: ```git add ListExamples.java```, ```git commit -m "Updated"```, ```git push origin main```
 
 The first part of this step is adding the ListExamples.java file to the staging area so that ```git commit -m "Updated"``` will work on the ListExamples.java file. If ```git add ListExamples.java``` command isn't ran, then ```git commit -m "Updated"``` would fail to commit the ListExamples.java file. After running ```git addListExamples.java```, I ran ```git commit -m "Updated"``` to commit to file. I then ran ```git push origin main``` to push the changes onto Github. 
