@@ -25,7 +25,7 @@ Keys pressed: cd lab7 <enter> <control> r javac <enter> <control> r java <contro
 I first changed directory with the cd command to get to the lab7 directory, then I searched up the javac command using <control> r, because I did it before during the lab. After searching it up and compiling the testers, I then had to search up the run command for the testers. I searched up java using <control> r, but I had to press <control> r two more times, because the first two times led me to the compiling command that we already used in this step. The last <control> r showed the right command to run the test, and since I already ran the test in lab, the whole command is filled out with the java file we are testing with, which in this case is ListExamplesTest.
 
 # Step 7
-  
+ 
 
 
   
