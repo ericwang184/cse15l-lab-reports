@@ -231,7 +231,8 @@ it then lists the file names with Israel in the file name, starting with
 ```
 findresults.txt:written_2/travel_guides/berlitz1/HandRIsrael.txt
 ```
-This command would be useful when you want to remove a file that has a specific phrase in a directory with many text files. Grep -r would return the file with the specific phrase contained in it, and then rm -rf would be able to remove the file in the future. 
+This command would be useful when you want to search for traveling spots. For example, say you want to visit a country, but you don't know which one. However, you want to visit museums in the country you are visiting. Then, the command you would run to find some museums would be 
+```grep -r "museum" written_2```
 
 I found out how the grep -r command line option works at this [link](https://www.computerhope.com/unix/ugrep.htm).
 ## grep -n command line option
