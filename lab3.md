@@ -309,7 +309,7 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothe
 ```
 We see that grep -n command option doesn't work for directories, and so the first six lines are outputed when it tries to search through a directory. Then, it lists out the two spots where "Lucayans" is present in a text file, and we see that they are in lines 6 and 7 in the Bahamas-History.txt file. 
 
-The grep -n command would be useful if you are trying to edit the specific phrase in a directory with many text files, and grep -n command would return the line number with the file it's in, specifying it and making it easier to edit the text file using the sed command in the future since we know which line the specific phrase is. 
+The grep -n command would be useful if you are trying to edit the specific phrase in a directory with many text files, and grep -n command would return the line number with the file it's in, specifying it and making it easier to edit the text file using the sed or nano command in the future since we know which line the specific phrase is. 
 
 I found out how the grep -n command line option works at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/).
 ## grep -c command option
