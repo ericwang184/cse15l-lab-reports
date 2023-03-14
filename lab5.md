@@ -337,7 +337,6 @@ The find -size command line option will return the paths of all files and direct
 The first example for the find -size command line option is down below. 
 
 ```
-
 [cs15lwi23aqw@ieng6-201]:skill-demo1-data:506$ find written_2 -size -20b
 written_2
 written_2/non-fiction
