@@ -60,11 +60,7 @@ written_2/travel_guides/berlitz1/WhatToIsrael.txt
 written_2/travel_guides/berlitz1/WhereToIsrael.txt
 ```
 
-In this example, I am trying to find any file name that has Israel in it, hence the 
-```
-*Israel*txt
-```
-part of the command. We see that there is 5 different text files with Israel in its name. 
+In this example, I am trying to find any file name that has Israel in it, hence the ```*Israel*txt``` part of the command. We see that there is 5 different text files with Israel in its name. 
 
 This command is useful when you are searching for a file which you don't know the exact name of. Therefore, you can use the find -iname command line option to search for it case-insensitively. 
 
